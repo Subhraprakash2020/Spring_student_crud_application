@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/custome.js"></script>
+</head>
+<body>
+    <h1>Student List</h1>
+
+    <form id="student-form">
+        <input type="hidden" id = "student-id"/>
+        <input type="text" id = "name" placeholder="Name" required />
+        <select name = "Gender" id = "gender">
+            <option value = "">Select a Value</option>
+            <option value="MALE">MALE</option>
+            <option value="FEMALE">FEMALE</option>
+        </select>
+        <input type="number" id = "fees" placeholder="fees" required />
+        <input type="text" id = "parentsName" placeholder="Parents Name" required />
+        <button type="submit">Save</button>
+    </form>
+  
+    <table border="1" id="student-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Gender</th>
+          <th>Parents Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Students will be inserted here -->
+      </tbody>
+</body>
+</html>
